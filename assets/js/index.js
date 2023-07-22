@@ -19,6 +19,7 @@ addBtn.addEventListener("click", () => {
   const editBtn = document.querySelectorAll(".btn-warning");
   editBtn.forEach((btn) => {
     btn.addEventListener("click", (e) => {
+      input.focus();
       input.value =
         e.target.parentNode.parentNode.querySelector("h4").innerText;
     });
